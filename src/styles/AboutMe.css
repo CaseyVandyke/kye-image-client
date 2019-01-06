@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.AboutMe-container {
+  margin-top: 50px;
+  width: 600px;
+  line-height: 1.4em;
+  margin: 50px auto;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+.Greetings,
+.About {
+  margin-bottom: 20px;
+  text-align: left;
+}

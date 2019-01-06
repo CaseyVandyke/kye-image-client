@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.input-control,
+.login {
+  border-radius: 3px;
+  padding: 10px;
+  border: 1px solid;
+  margin: 10px;
+}
+
+.login {
+  font-family: "Roboto";
+  font-size: 17px;
+  height: 33px;
+  width: 145px;
+  line-height: 1px;
+  padding: 22px;
+}
+
+.is-invalid {
+  border-color: red;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 10px;
+}
+
+.input-field {
+  text-align: center;
+}
