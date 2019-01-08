@@ -5,8 +5,12 @@ class UserForm extends Component {
   constructor() {
     super();
     this.state = {
+      title: "",
+      date: "",
+      body: "",
       description: "",
-      selectedFile: ""
+      selectedFile: "",
+      imagePath: ""
     };
   }
 
@@ -28,8 +32,9 @@ class UserForm extends Component {
     formData.append("description", description);
     formData.append("selectedFile", selectedFile);
 
-    axios.post("http://localhost:4000/", formData).then(result => {
-      // access results...
+    axios.post("http://localhost:4000/uploads", formData).then(result => {
+      console.log(">> (onSubmit) file upload result = ", result);
+      this.setState({ imagePath: result.data.path });
     });
   };
 
