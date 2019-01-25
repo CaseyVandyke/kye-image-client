@@ -4,16 +4,65 @@
 }
 
 .AboutMe-container {
-  margin-top: 50px;
   width: 600px;
-  line-height: 1.4em;
+  line-height: 1.7em;
   margin: 50px auto;
-  font-size: 23px;
-  font-weight: 200;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 .Greetings,
 .About {
   margin-bottom: 20px;
   text-align: left;
+}
+
+@media only screen and (min-width: 320px) {
+  .AboutMe-container {
+    line-height: 1.7em;
+    width: 270px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .AboutMe-container {
+    line-height: 1.7em;
+    width: 370px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .AboutMe-container {
+    line-height: 1.8em;
+    width: 470px;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .AboutMe-container {
+    line-height: 1.9em;
+    width: 570px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .AboutMe-container {
+    line-height: 1.7em;
+    width: 670px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 50px auto;
+  }
 }

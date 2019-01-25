@@ -3,21 +3,33 @@
   padding: 0;
 }
 
+.input-control {
+  font-size: 15px;
+}
+
 .input-control,
 .login {
   border-radius: 3px;
   padding: 10px;
   border: 1px solid;
-  margin: 10px;
+  margin: 30px 10px 10px;
+  width: 220px;
+  border-color: #988;
 }
 
 .login {
   font-family: "Roboto";
   font-size: 17px;
   height: 33px;
-  width: 145px;
+  width: 242px;
   line-height: 1px;
   padding: 22px;
+  background-color: #988;
+  color: #fff;
+}
+
+.file-button {
+  text-align: center;
 }
 
 .is-invalid {
@@ -31,4 +43,87 @@
 
 .input-field {
   text-align: center;
+}
+
+.auth-title {
+  width: 290px;
+  margin: 0 auto;
+  background-color: #988;
+  padding: 20px;
+  color: #fff;
+}
+
+.signup-container {
+  border: 1px solid #988;
+  width: 330px;
+  margin: 50px auto;
+  border-radius: 3px;
+}
+
+@media only screen and (min-width: 320px) {
+  .signup-container {
+    border: 1px solid #988;
+    width: 230px;
+    border-radius: 3px;
+  }
+  .auth-title {
+    width: 190px;
+    font-size: 1.1rem;
+  }
+  .input-control {
+    width: 180px;
+    font-size: 0.7rem;
+    margin: 10px;
+    padding: 5px;
+  }
+  .login {
+    width: 190px;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .signup-container {
+    border: 1px solid #988;
+    width: 230px;
+    border-radius: 3px;
+  }
+  .auth-title {
+    width: 190px;
+    font-size: 1.3rem;
+  }
+  .input-control {
+    width: 180px;
+    font-size: 0.8rem;
+  }
+  .login {
+    width: 190px;
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .signup-container {
+    border: 1px solid #988;
+    width: 330px;
+    margin: 50px auto;
+    border-radius: 3px;
+  }
+  .auth-title {
+    width: 290px;
+    font-size: 1.3rem;
+  }
+  .input-control {
+    width: 220px;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .login {
+    width: 190px;
+    font-size: 1.3rem;
+    font-weight: 200;
+  }
 }

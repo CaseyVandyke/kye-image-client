@@ -3,14 +3,21 @@
   padding: 0;
 }
 
-.navbar-logo img {
+.navbar-logo {
   text-align: center;
   text-decoration: none;
 }
 
 .container {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+.navbar-container {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  width: 750px;
+  margin: 0 auto;
 }
 
 .auth-title {
@@ -28,10 +35,112 @@
 li {
   display: inline;
   list-style: none;
+  margin-bottom: 10px;
 }
 
 a {
   text-decoration: none;
   margin: 20px;
   padding: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.logo {
+  height: 175px;
+}
+
+@media only screen and (min-width: 320px) {
+  .logo {
+    height: 100px;
+  }
+  .navbar-container {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    width: 350px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .logo {
+    height: 100px;
+  }
+  .navbar-container {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    width: 425px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .logo {
+    height: 125px;
+  }
+  .navbar-container {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    width: 550px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    height: 150px;
+  }
+  .navbar-container {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    width: 650px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logo {
+    height: 175px;
+  }
+  .navbar-container {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    width: 750px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
 }

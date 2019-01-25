@@ -15,40 +15,34 @@ class Navbar extends Component {
     const { isAuthenticated } = this.props.auth;
 
     const authLinks = (
-      <ul>
-        <li>
-          <Link to="/">Blog/Gallery</Link>
-        </li>
-        <li>
-          <Link to="/about-me">About me</Link>
-        </li>
-        <li>
-          <Link to="/pricing">Pricing</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link
-            to="/Landing"
-            onClick={this.onLogoutClick.bind(this)}
-            className="nav-link"
-          >
-            Logout
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="login-initials">
-            KW
-          </Link>
-        </li>
-      </ul>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/uploads">Upload Image</Link>
+          </li>
+          <li>
+            <Link to="/signup">New Admin</Link>
+          </li>
+          <li>
+            <Link to="/price-edit">Pricing</Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              onClick={this.onLogoutClick.bind(this)}
+              className="nav-link"
+            >
+              Logout
+            </Link>
+          </li>
+        </ul>
+      </nav>
     );
 
     const guestLinks = (
       <ul className="nav-container">
         <li>
-          <Link to="/">Blog/Gallery</Link>
+          <Link to="/blog">Blog/Gallery</Link>
         </li>
         <li>
           <Link to="/about-me">About Me</Link>
@@ -56,27 +50,19 @@ class Navbar extends Component {
         <li>
           <Link to="/pricing">Pricing</Link>
         </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/signup">Signup</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
       </ul>
     );
 
     return (
       <nav className="navbar-container">
         <div className="container">
-          <Link className="navbar-logo" to="/">
+          <div className="navbar-logo">
             <img
-              src={require("./../../img/Kye-Image_Stamp1-03 (2).png")}
+              className="logo"
+              src={require("./../../img/Kye-Image_Stamp1-03 (5).png")}
               alt="kye-logo"
             />
-          </Link>
+          </div>
           <div className="navlinks">
             {isAuthenticated ? authLinks : guestLinks}
           </div>

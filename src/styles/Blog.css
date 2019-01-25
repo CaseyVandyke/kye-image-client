@@ -1,0 +1,148 @@
+.blog-container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.image-center {
+  text-align: left;
+}
+
+.image-container {
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.image-info {
+  width: 600px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.image-title {
+  margin-top: 40px;
+  font-weight: 300;
+}
+
+.image-size {
+  height: auto;
+  width: 600px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 320px) {
+  .blog-container {
+    margin: 0 auto;
+    width: 270px;
+  }
+
+  .image-info {
+    width: 270px;
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 0.8rem;
+  }
+
+  .image-size {
+    height: auto;
+    width: 270px;
+  }
+
+  .image-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .blog-container {
+    margin: 0 auto;
+    width: 370px;
+  }
+
+  .image-info {
+    width: 370px;
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 0.9rem;
+  }
+
+  .image-size {
+    height: auto;
+    width: 370px;
+  }
+
+  .image-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .blog-container {
+    margin: 0 auto;
+    width: 470px;
+  }
+
+  .image-info {
+    width: 470px;
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 1.1rem;
+  }
+
+  .image-size {
+    height: auto;
+    width: 470px;
+  }
+
+  .image-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .blog-container {
+    margin: 0 auto;
+    width: 570px;
+  }
+
+  .image-info {
+    width: 570px;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 1.3rem;
+  }
+
+  .image-size {
+    height: auto;
+    width: 570px;
+  }
+
+  .image-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .blog-container {
+    margin: 0 auto;
+    width: 670px;
+  }
+
+  .image-info {
+    width: 670px;
+    font-weight: 300;
+    line-height: 1.4em;
+    font-size: 1.5rem;
+  }
+
+  .image-size {
+    height: auto;
+    width: 670px;
+  }
+
+  .image-title {
+    font-size: 2.1rem;
+  }
+}

@@ -6,8 +6,8 @@ import jwt_decode from "jwt-decode";
 // Register User
 export const registerUser = (userData, history) => dispatch => {
   axios
-    .post("http://localhost:4000/api/users", userData)
-    .then(res => history.push("/login"))
+    .post("http://localhost:4000/api/admin", userData)
+    .then(res => history.push("/dashboard"))
     .catch(err => {
       console.log(err);
       dispatch({
@@ -42,7 +42,7 @@ export const loginUser = userData => dispatch => {
     });
 };
 
-export const contactUser = (userData, history) => dispatch => {
+/*export const contactUser = (userData, history) => dispatch => {
   axios
     .post("http://localhost:4000/api/contact", userData)
     .then(res => history.push("/"))
@@ -54,6 +54,7 @@ export const contactUser = (userData, history) => dispatch => {
       });
     });
 };
+*/
 
 // Set logged in user
 export const setCurrentUser = decoded => {

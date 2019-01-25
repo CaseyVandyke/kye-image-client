@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 import classnames from "classnames";
 import { loginUser } from "./../../actions/authActions";
 
-class Login extends Component {
+class Admin extends Component {
   constructor() {
     super();
     this.state = {
@@ -85,7 +85,7 @@ class Login extends Component {
           </div>
           <div className="input-field">
             <button className="login">
-              <span>Login</span>
+              <span>Admin</span>
             </button>
           </div>
         </form>
@@ -94,7 +94,7 @@ class Login extends Component {
   }
 }
 
-Login.propTypes = {
+Admin.propTypes = {
   loginUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired
@@ -108,4 +108,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { loginUser }
-)(withRouter(Login));
+)(withRouter(Admin));

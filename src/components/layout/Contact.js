@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/*import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
@@ -128,6 +128,7 @@ class Contact extends Component {
             </button>
           </div>
         </form>
+        <div className="clear-content" />
       </div>
     );
   }
@@ -146,3 +147,4 @@ export default connect(
   mapStateToProps,
   { contactUser }
 )(withRouter(Contact));
+*/

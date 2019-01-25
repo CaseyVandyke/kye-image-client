@@ -1,25 +1,43 @@
 import React, { Component } from "react";
-import { PropTypes } from "prop-types";
-import { connect } from "react-redux";
+import axios from "axios";
+import "../../styles/Landing.css";
 
-class Landing extends Component {
-  componentDidMount() {
-    if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/dashboard");
-    }
+class Blog extends Component {
+  constructor() {
+    super();
+    this.state = {
+      images: []
+    };
   }
-
+  componentDidMount() {
+    axios
+      .get("http://localhost:4000/api/uploads")
+      .then(response => {
+        console.log(response.data);
+        const images = response.data;
+        this.setState({
+          images
+        });
+      })
+      .catch(err => {
+        if (err) {
+          console.log(err);
+        }
+      });
+  }
   render() {
-    return <div className="landing" />;
+    return (
+      <div className="blog-container">
+        {this.state.images.map((image, i) => (
+          <div className="image-container" key={i}>
+            <span className="image-inline">
+              <img className="image-size" src={image.image} alt="" />
+            </span>
+          </div>
+        ))}
+      </div>
+    );
   }
 }
 
-Landing.propTypes = {
-  auth: PropTypes.object.isRequired
-};
-
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-
-export default connect(mapStateToProps)(Landing);
+export default Blog;
