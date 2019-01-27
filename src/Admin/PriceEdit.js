@@ -145,7 +145,7 @@ class PriceEdit extends Component {
 
         <div className="input-field">
           <button className="login">
-            <span>Update</span>
+            <span>Submit</span>
           </button>
         </div>
       </form>

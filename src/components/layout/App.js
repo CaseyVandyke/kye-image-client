@@ -18,6 +18,8 @@ import PriceEdit from "../../Admin/PriceEdit";
 //import Contact from "../layout/Contact";
 import ImageUpload from "../../Admin/ImageUpload";
 
+import PrivateRoute from "../auth/PrivateRoute";
+
 // Check for token
 if (localStorage.jwtToken) {
   //Set auth token header auth
@@ -47,11 +49,11 @@ class App extends Component {
               <Route exact path="/" component={Landing} />
               <Route exact path="/blog" component={Blog} />
               <Route exact path="/admin" component={Admin} />
-              <Route exact path="/signup" component={SignUp} />
+              <PrivateRoute exact path="/signup" component={SignUp} />
               <Route exact path="/about-me" component={AboutMe} />
               <Route exact path="/pricing" component={Pricing} />
-              <Route exact path="/uploads" component={ImageUpload} />
-              <Route exact path="/price-edit" component={PriceEdit} />
+              <PrivateRoute exact path="/uploads" component={ImageUpload} />
+              <PrivateRoute exact path="/price-edit" component={PriceEdit} />
             </Switch>
             <Footer />
           </div>

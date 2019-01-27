@@ -119,7 +119,7 @@ class Register extends Component {
             </div>
             <div className="input-field">
               <button className="login">
-                <span>Login</span>
+                <span>Submit</span>
               </button>
             </div>
           </form>

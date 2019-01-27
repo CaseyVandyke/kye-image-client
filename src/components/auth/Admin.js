@@ -85,7 +85,7 @@ class Admin extends Component {
           </div>
           <div className="input-field">
             <button className="login">
-              <span>Admin</span>
+              <span>Login</span>
             </button>
           </div>
         </form>
