@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "./../../actions/authActions";
@@ -18,22 +18,38 @@ class Navbar extends Component {
       <nav>
         <ul>
           <li>
-            <Link to="/uploads">Upload Image</Link>
+            <NavLink
+              to="/uploads"
+              activeClassName="active"
+              className="nav-link"
+            >
+              Upload Image
+            </NavLink>
           </li>
           <li>
-            <Link to="/signup">New Admin</Link>
+            <NavLink to="/signup" activeClassName="active" className="nav-link">
+              New Admin
+            </NavLink>
           </li>
           <li>
-            <Link to="/price-edit">Pricing</Link>
+            <NavLink
+              to="/price-edit"
+              activeClassName="active"
+              className="nav-link"
+            >
+              Pricing
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
+              exact
               to="/"
               onClick={this.onLogoutClick.bind(this)}
+              activeClassName="active"
               className="nav-link"
             >
               Logout
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -42,13 +58,24 @@ class Navbar extends Component {
     const guestLinks = (
       <ul className="nav-container">
         <li>
-          <Link to="/blog">Blog/Gallery</Link>
+          <NavLink exact to="/" activeClassName="active" className="nav-link">
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/about-me">About Me</Link>
+          <NavLink to="/blog" activeClassName="active" className="nav-link">
+            Blog/Gallery
+          </NavLink>
         </li>
         <li>
-          <Link to="/pricing">Pricing</Link>
+          <NavLink to="/about-me" activeClassName="active" className="nav-link">
+            About Me
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/pricing" activeClassName="active" className="nav-link">
+            Pricing
+          </NavLink>
         </li>
       </ul>
     );
@@ -81,7 +108,9 @@ const mapStateToProps = state => ({
   auth: state.auth
 });
 
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Navbar);
+export default withRouter(
+  connect(
+    mapStateToProps,
+    { logoutUser }
+  )(Navbar)
+);

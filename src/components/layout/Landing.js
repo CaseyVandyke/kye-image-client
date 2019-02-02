@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "../../styles/Landing.css";
+import { Link } from "react-router-dom";
 
 class Blog extends Component {
   constructor() {
@@ -27,14 +28,25 @@ class Blog extends Component {
   }
   render() {
     return (
-      <div className="blog-container">
-        {this.state.images.map((image, i) => (
-          <div className="image-container" key={i}>
-            <span className="image-inline">
-              <img className="image-size" src={image.image} alt="" />
-            </span>
+      <div>
+        <div className="welcome-container">
+          <h2 className="welcome-message">Welcome to</h2>
+          <p className="welcome-header">Kye Image</p>
+          <p className="welcome-info">
+            Hi there and welcome to Kye Image! I am a professionally trained
+            Nebrasksa and Utah photographer.
+          </p>
+          <Link to="/blog" className="tour">
+            Take the tour
+          </Link>
+          <div className="landing-logo">
+            <img
+              className="logo"
+              src={require("../../img/Kye-Image_Stamp3-09-1.png")}
+              alt="kye-logo"
+            />
           </div>
-        ))}
+        </div>
       </div>
     );
   }

@@ -28,8 +28,10 @@
   margin: 20px;
 }
 
-.navlinks {
-  margin-top: 40px;
+.nav-link {
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #808080;
 }
 
 li {
@@ -38,16 +40,18 @@ li {
   margin-bottom: 10px;
 }
 
-a {
+.nav-link:hover {
   text-decoration: none;
-  margin: 20px;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 300;
+  background-color: lightskyblue;
+  transition: 0.3s;
+  color: #fff;
+  border-radius: 3px;
 }
 
-.logo {
-  height: 175px;
+.active {
+  background-color: lightskyblue;
+  color: #fff;
+  border-radius: 3px;
 }
 
 @media only screen and (min-width: 320px) {
@@ -60,11 +64,10 @@ a {
     width: 350px;
     margin: 0 auto;
   }
-  a {
+  .nav-link {
     text-decoration: none;
-    margin: 0;
     padding: 10px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 300;
   }
 }
@@ -79,11 +82,11 @@ a {
     width: 425px;
     margin: 0 auto;
   }
-  a {
+  .nav-link {
     text-decoration: none;
     margin: 5px;
     padding: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 300;
   }
 }
@@ -98,7 +101,7 @@ a {
     width: 550px;
     margin: 0 auto;
   }
-  a {
+  .nav-link {
     text-decoration: none;
     margin: 10px;
     padding: 10px;
@@ -117,7 +120,7 @@ a {
     width: 650px;
     margin: 0 auto;
   }
-  a {
+  .nav-link {
     text-decoration: none;
     margin: 10px;
     padding: 10px;
@@ -136,11 +139,11 @@ a {
     width: 750px;
     margin: 0 auto;
   }
-  a {
+  .nav-link {
     text-decoration: none;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 300;
   }
 }

@@ -12,9 +12,9 @@ const Footer = () => (
     <Link to="https://m.facebook.com/kyeimage/" className="icon-push">
       <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: "blue" }} />
     </Link>
-    <p className="icon-push">
+    <Link to="/" className="icon-push">
       <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: "red" }} />
-    </p>
+    </Link>
   </div>
 );
 

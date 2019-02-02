@@ -1,11 +1,58 @@
-#image-container {
+.welcome-container {
+  width: 600px;
+  text-align: center;
+  margin: 70px auto;
+  line-height: 2rem;
+}
+
+.welcome-message {
+  text-align: center;
+  margin: 50px;
+}
+
+.welcome-header {
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 40px;
   text-align: center;
 }
 
-#image-inline {
+.welcome-info {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
-#image-size {
-  width: 400px;
-  margin: 20px;
+.tour {
+  text-align: center;
+  color: #808080;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.tour:hover {
+  background-color: lightskyblue;
+  transition: 0.3s;
+  color: #fff;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 480px) {
+  .welcome-container {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .welcome-message {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome-container {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .welcome-message {
+    font-size: 1.1rem;
+  }
 }
