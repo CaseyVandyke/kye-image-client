@@ -64,6 +64,9 @@ li {
     width: 350px;
     margin: 0 auto;
   }
+  .nav-container {
+    padding: 10px;
+  }
   .nav-link {
     text-decoration: none;
     padding: 10px;
@@ -81,6 +84,9 @@ li {
     border-bottom: 1px solid #000;
     width: 425px;
     margin: 0 auto;
+  }
+  .nav-container {
+    padding: 10px;
   }
   .nav-link {
     text-decoration: none;
@@ -101,6 +107,9 @@ li {
     width: 550px;
     margin: 0 auto;
   }
+  .nav-container {
+    padding: 10px;
+  }
   .nav-link {
     text-decoration: none;
     margin: 10px;
@@ -120,6 +129,9 @@ li {
     width: 650px;
     margin: 0 auto;
   }
+  .nav-container {
+    padding: 10px;
+  }
   .nav-link {
     text-decoration: none;
     margin: 10px;
@@ -138,6 +150,9 @@ li {
     border-bottom: 1px solid #000;
     width: 750px;
     margin: 0 auto;
+  }
+  .nav-container {
+    padding: 10px;
   }
   .nav-link {
     text-decoration: none;

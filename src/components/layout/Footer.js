@@ -9,12 +9,24 @@ library.add(faFacebook);
 
 const Footer = () => (
   <div className="footer-container">
-    <Link to="https://m.facebook.com/kyeimage/" className="icon-push">
-      <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: "blue" }} />
-    </Link>
-    <Link to="/" className="icon-push">
-      <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: "red" }} />
-    </Link>
+    <div className="icon-push">
+      <Link to="https://m.facebook.com/kyeimage/" className="a-style">
+        <FontAwesomeIcon
+          icon={faFacebook}
+          size="2x"
+          style={{ color: "blue" }}
+        />
+      </Link>
+    </div>
+    <div className="icon-push">
+      <Link to="/" className="a-style">
+        <FontAwesomeIcon
+          icon={faInstagram}
+          size="2x"
+          style={{ color: "red" }}
+        />
+      </Link>
+    </div>
   </div>
 );
 

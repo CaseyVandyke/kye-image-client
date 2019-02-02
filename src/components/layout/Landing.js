@@ -10,7 +10,7 @@ class Blog extends Component {
       images: []
     };
   }
-  componentDidMount() {
+  /*componentDidMount() {
     axios
       .get("http://localhost:4000/api/uploads")
       .then(response => {
@@ -25,7 +25,7 @@ class Blog extends Component {
           console.log(err);
         }
       });
-  }
+  } */
   render() {
     return (
       <div>
