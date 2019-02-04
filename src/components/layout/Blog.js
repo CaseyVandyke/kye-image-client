@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "../../styles/Blog.css";
+import { API_BASE_URL } from "../../config";
 
 class Blog extends Component {
   constructor() {
@@ -11,7 +12,7 @@ class Blog extends Component {
   }
   componentDidMount() {
     axios
-      .get("http://localhost:4000/api/uploads")
+      .get(`${API_BASE_URL}/uploads`)
       .then(response => {
         console.log(response.data);
         const images = response.data;

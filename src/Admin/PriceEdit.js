@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Pricing from "../components/layout/Pricing";
+import { API_BASE_URL } from "../config";
 
 class PriceEdit extends Component {
   constructor() {
@@ -36,7 +37,7 @@ class PriceEdit extends Component {
       maternity: this.state.maternity
     };
 
-    axios.post("http://localhost:4000/api/pricing", newPrices).then(result => {
+    axios.post(`${API_BASE_URL}/pricing`, newPrices).then(result => {
       console.log(result);
     });
   };

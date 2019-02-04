@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./../../styles/Pricing.css";
+import { API_BASE_URL } from "../../config";
 
 class Pricing extends Component {
   constructor() {
@@ -21,7 +22,7 @@ class Pricing extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:4000/api/pricing")
+      .get(`${API_BASE_URL}/pricing`)
       .then(response => {
         const pricing = response.data;
         this.setState({
