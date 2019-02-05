@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { API_BASE_URL } from "../config";
 
 class ImageUpload extends Component {
   constructor() {
@@ -33,7 +34,7 @@ class ImageUpload extends Component {
     formData.append("selectedFile", selectedFile);
     formData.append("info", info);
 
-    axios.post("http://localhost:4000/uploads", formData).then(result => {
+    axios.post(`${API_BASE_URL}/uploads`, formData).then(result => {
       console.log(">> (onSubmit) file upload result = ", result);
       this.setState({
         imagePath: result.data.path
