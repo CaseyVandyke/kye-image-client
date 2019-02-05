@@ -35,7 +35,7 @@ class Blog extends Component {
             <p className="date">{image.date}</p>
             <p className="image-info">{image.info}</p>
             <div className="image-container">
-              <img className="image-size" src={image} alt="" />
+              <img className="image-size" src={image.image} alt="" />
             </div>
           </div>
         ))}
