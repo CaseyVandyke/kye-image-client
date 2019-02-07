@@ -14,7 +14,7 @@
   border: 1px solid;
   margin: 30px 10px 10px;
   width: 220px;
-  border-color: #988;
+  border-color: #eab5ad;
 }
 
 .login {
@@ -24,7 +24,7 @@
   width: 242px;
   line-height: 1px;
   padding: 22px;
-  background-color: #988;
+  background-color: #eab5ad;
   color: #fff;
 }
 
@@ -48,13 +48,13 @@
 .auth-title {
   width: 290px;
   margin: 0 auto;
-  background-color: #988;
+  background-color: #eab5ad;
   padding: 20px;
   color: #fff;
 }
 
 .signup-container {
-  border: 1px solid #988;
+  border: 1px solid #eab5ad;
   width: 330px;
   margin: 50px auto;
   border-radius: 3px;
@@ -62,7 +62,7 @@
 
 @media only screen and (min-width: 320px) {
   .signup-container {
-    border: 1px solid #988;
+    border: 1px solid #eab5ad;
     width: 230px;
     border-radius: 3px;
   }
@@ -86,7 +86,7 @@
 
 @media only screen and (min-width: 480px) {
   .signup-container {
-    border: 1px solid #988;
+    border: 1px solid #eab5ad;
     width: 230px;
     border-radius: 3px;
   }
@@ -107,7 +107,7 @@
 
 @media only screen and (min-width: 600px) {
   .signup-container {
-    border: 1px solid #988;
+    border: 1px solid #eab5ad;
     width: 330px;
     margin: 50px auto;
     border-radius: 3px;
