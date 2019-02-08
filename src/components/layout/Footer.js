@@ -18,7 +18,7 @@ const Footer = () => (
       </a>
     </div>
     <div className="icon-push">
-      <a href="/" className="a-style">
+      <a href="https://www.instagram.com/kyeimage/" className="a-style">
         <FontAwesomeIcon
           icon={faInstagram}
           size="2x"
