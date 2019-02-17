@@ -16,7 +16,7 @@ class Navbar extends Component {
 
     const authLinks = (
       <nav>
-        <ul>
+        <ul className="nav-container">
           <li>
             <NavLink
               to="/uploads"
