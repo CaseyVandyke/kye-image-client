@@ -28,7 +28,7 @@ class Navbar extends Component {
           </li>
           <li>
             <NavLink to="/signup" activeClassName="active" className="nav-link">
-              New Admin
+              Admin
             </NavLink>
           </li>
           <li>

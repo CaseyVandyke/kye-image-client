@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.alert-success p {
+  color: #808080;
+  text-align: center;
+  padding: 10px;
+}
+
 .pricing-container {
   text-align: center;
   font-size: 20px;

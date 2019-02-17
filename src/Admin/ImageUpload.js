@@ -1,45 +1,20 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { API_BASE_URL } from "../config";
-import FormValidator from "./FormValidator";
+import SuccessAlert from "./SuccessAlert";
 
 class ImageUpload extends Component {
   constructor() {
     super();
-    this.validator = new FormValidator([
-      {
-        field: "titleError",
-        method: "isEmpty",
-        validWhen: false,
-        message: "Title is required."
-      },
-      {
-        field: "infoError",
-        method: "isEmpty",
-        validWhen: false,
-        message: "Description is required."
-      },
-      {
-        field: "imageError",
-        method: "isEmpty",
-        validWhen: false,
-        message: "Please select image."
-      }
-    ]);
-
     this.state = {
       title: "",
-      titleError: "",
       info: "",
-      infoError: "",
       description: "",
       selectedFile: "",
       imagePath: "",
-      imageError: "",
-      validationMessage: "",
-      validation: this.validator.valid()
+      alert_message: "",
+      error_message: ""
     };
-    this.submitted = false;
   }
 
   onChange = e => {
@@ -54,13 +29,6 @@ class ImageUpload extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    const validation = this.validator.validate(this.state);
-    this.setState({ validation });
-    this.submitted = true;
-
-    if (validation.isValid) {
-      // handle actual form submission here
-    }
 
     const { description, selectedFile, title, info } = this.state;
     let formData = new FormData();
@@ -73,16 +41,20 @@ class ImageUpload extends Component {
     axios.post(`${API_BASE_URL}/uploads`, formData).then(result => {
       console.log(">> (onSubmit) file upload result = ", result);
       this.setState({
-        imagePath: result.data.path
+        imagePath: result.data.path,
+        alert_message: "success"
       });
     });
   };
 
   render() {
-    let validation = this.submitted // if the form has been submitted at least once
-      ? this.validator.validate(this.state) // then check validity every time we render
-      : this.state.validation; // otherwise just use what's in state
-    const { description, selectedFile, title, info } = this.state;
+    const {
+      description,
+      selectedFile,
+      title,
+      info,
+      alert_message
+    } = this.state;
     return (
       <form className="signup-container" onSubmit={this.onSubmit}>
         <h5 className="auth-title">Upload an Image</h5>
@@ -90,42 +62,34 @@ class ImageUpload extends Component {
           <label htmlFor="title" />
           <input
             type="text"
+            className="input-control"
             name="title"
             value={title}
             placeholder="Title"
             onChange={this.onChange}
-            className={`input-control ${validation.titleError.message &&
-              "is-invalid"}`}
             required
           />
-          <div className="invalid-feedback">
-            {validation.titleError.message}
-          </div>
         </div>
         <div className="input-field">
           <label htmlFor="description" />
           <input
             type="text"
+            className="input-control"
             name="info"
             value={info}
             placeholder="Description"
             onChange={this.onChange}
-            className={`input-control ${validation.infoError.message &&
-              "is-invalid"}`}
             required
           />
-          <div className="invalid-feedback">{validation.infoError.message}</div>
         </div>
         <div className="file-button">
           <input type="file" name="selectedFile" onChange={this.onChange} />
-          <div className="invalid-feedback">
-            {validation.imageError.message}
-          </div>
           <br />
           <button className="login" type="submit">
             Submit
           </button>
         </div>
+        {alert_message === "success" ? <SuccessAlert /> : null}
       </form>
     );
   }

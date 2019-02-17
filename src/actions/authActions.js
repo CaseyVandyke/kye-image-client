@@ -43,20 +43,6 @@ export const loginUser = userData => dispatch => {
     });
 };
 
-/*export const contactUser = (userData, history) => dispatch => {
-  axios
-    .post("http://localhost:4000/api/contact", userData)
-    .then(res => history.push("/"))
-    .catch(err => {
-      console.log(err);
-      dispatch({
-        type: GET_ERRORS,
-        payload: err.response.data
-      });
-    });
-};
-*/
-
 // Set logged in user
 export const setCurrentUser = decoded => {
   return {
