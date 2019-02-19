@@ -32,7 +32,6 @@ class Blog extends Component {
         {this.state.images.map((image, i) => (
           <div className="image-center" key={i}>
             <h1 className="image-title">{image.title}</h1>
-            <p className="date">{image.date}</p>
             <p className="image-info">{image.info}</p>
             <div className="image-container">
               <img className="image-size" src={image.image} alt="" />
