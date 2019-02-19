@@ -22,7 +22,7 @@ To access Admin side enter endpoint /admin
 
 ![](image-screenshots/Home.png)
 
-![](image-screenshots/Blog.png
+![](image-screenshots/Blog.png)
 
 ![](image-screenshots/About-me.png)
 
