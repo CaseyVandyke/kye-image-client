@@ -20,6 +20,18 @@ To access Admin side enter endpoint /admin
 
 ## Screenshots
 
-##### Landing page
-
 ![](image-screenshots/Home.png)
+
+![](image-screenshots/Blog.png
+
+![](image-screenshots/About-me.png)
+
+![](image-screenshots/Pricing.png)
+
+![](image-screenshots/Add-admin.png)
+
+![](image-screenshots/Upload-img.png)
+
+![](image-screenshots/.png)
+
+![](image-screenshots/Price-edit.png)
