@@ -19,3 +19,7 @@ To access Admin side enter endpoint /admin
 [Server Code](https://github.com/CaseyVandyke/kye-image-server)
 
 ## Screenshots
+
+##### Landing page
+
+![](image-screenshots/Home.png)
