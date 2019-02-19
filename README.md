@@ -32,6 +32,4 @@ To access Admin side enter endpoint /admin
 
 ![](image-screenshots/Upload-img.png)
 
-![](image-screenshots/.png)
-
 ![](image-screenshots/Price-edit.png)
