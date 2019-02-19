@@ -18,6 +18,10 @@ To access Admin side enter endpoint /admin
 
 [Server Code](https://github.com/CaseyVandyke/kye-image-server)
 
+## Attention
+
+The Blog/Gallery section will be empty due to Heroku's inability to cache images. I will need to add a 3rd party cloud service to hold my images in the future.
+
 ## Screenshots
 
 ![](image-screenshots/Home.png)
