@@ -6,7 +6,7 @@ Kye Image is a photography website built for my sister's business. Learn about h
 
 ## Demo User
 
-To access Admin side enter endpoint /admin
+To access [Admin Section](https://rocky-sea-86985.herokuapp.com/admin)
 
 #### Demo Username: Test@Test.com
 
@@ -17,10 +17,6 @@ To access Admin side enter endpoint /admin
 [Live Site](https://rocky-sea-86985.herokuapp.com/)
 
 [Server Code](https://github.com/CaseyVandyke/kye-image-server)
-
-## Attention
-
-The Blog/Gallery section will be empty due to Heroku's inability to cache images. I will need to add a 3rd party cloud service to hold my images in the future.
 
 ## Screenshots
 
